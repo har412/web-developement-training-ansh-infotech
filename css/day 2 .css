@@ -1,0 +1,91 @@
+.box1{
+   width: 100px;    
+   height: 100px;    
+   background: red;
+}
+.box2{
+   width: 100px;    
+   height: 100px;    
+   background: linear-gradient(to top,black,rgb(14, 16, 129));
+}
+.box3{
+   width: 100px;    
+   height: 100px;    
+   background: radial-gradient( orange,purple);
+}
+.box4{
+   width: 700px;    
+   height: 365px;    
+   background: url(../images/logo.png);
+   background-size: auto auto;
+   background-position: top;
+   background-repeat: no-repeat;
+    opacity: .5;
+    transform:rotate(20deg);
+    align-items: center;
+    transition: 2s;
+}
+.box4:hover{
+ transform: rotate(360deg);
+}
+
+.para{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: -2px 0px 0px red;
+    text-align: justify;
+    /* line-height: 10px;
+    letter-spacing: 10PX;
+    word-spacing: 10px; */
+    text-indent: 100px;
+    text-transform: capitalize;
+}
+
+
+/* ***********************Z-INDEX AND FLOAT AND POSITION******************* */
+
+/* 
+1. We need to specify position in order to use z- index.
+2. we need to spicify top or bottom or left or right in order to use position sticky
+3. position relative is used to not to effect the whole structure and change z index or appreance of object which is previously formatted using margin.
+4. position absolute is used to give postio to object acccording to top left corner of screen.
+5.position ficed is used in navbar to fix that on top.
+6. position sticky is used to stick the object in any part of website with top bottom or left right spicification. */
+
+.box5{
+    width: 100%;
+    height: 50px;
+    background: RED;
+    position: fixed;
+    top:0px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    
+    
+    
+}
+
+.box6{
+    width: 100px;
+    height: 500px;
+    background: rgb(140, 0, 255);
+}
+.box7{
+    width: 100px;
+    height: 100px;
+    background: rgb(9, 255, 0);
+    text-align: center;
+    position:sticky;
+    float:right;
+    top:100px;
+
+    border-radius: 50px;
+}
+.box8{
+    width: 100px;
+    height: 1000px;
+    background: rgb(31, 192, 125);
+}
