@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+
+<style>
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:rgb(243 255 204);
+    }
+    .clockBase{
+        width: 500px;
+        height: 500px;
+        background: url('images/clockBase.png');
+        background-size: 100% 100%;
+
+        border-radius: 250px;
+
+    }
+    .pin1{
+        width:5px;
+        height: 230px;
+        position:absolute;
+        top: 10%;
+    left: 51%;
+        background: green;
+        animation:rotate 3s linear infinite;
+        transform-origin: bottom;
+
+    }
+    .pin2{
+        width:5px;
+        height: 230px;
+        position:absolute;
+        top: 10%;
+    left: 51%;
+        background: blue;
+        animation:rotatem 30s linear infinite;
+        transform-origin: bottom;
+
+    }
+    .pin3{
+        width:5px;
+        height: 230px;
+        position:absolute;
+        top: 10%;
+    left: 51%;
+        background: red;
+        animation:rotateh 120s linear infinite;
+        transform-origin: bottom;
+
+    }
+    @keyframes rotate {
+        100%{
+            transform: rotate(360deg);
+            
+        }
+        
+    }
+    @keyframes rotatem {
+        100%{
+            transform:rotate(360deg);
+        }
+        
+    }
+    @keyframes rotateh {
+        100%{
+            transform:rotate(360deg);
+        }
+        
+    }
+</style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="clockBase">
+            
+            <div class="pin1">
+                
+    
+            </div>
+            <div class="pin2"></div>
+            <div class="pin3"></div>
+        </div>
+    </div>
+        
+</body>
+</html>
