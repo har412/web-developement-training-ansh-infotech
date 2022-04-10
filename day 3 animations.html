@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         
+           background: black;
+           
+       }
+        }
+        .box1 {
+            position: absolute;
+
+            width: 5px;
+            height: 100px;
+            background: red;
+            animation: ab 6s linear infinite;
+
+
+        }
+
+        @keyframes ab {
+            100% {
+                transform: rotatez(360deg);
+                transform-origin: 100% 0%;
+                /* background: blue; */
+            }
+
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px 0px 100px 0px;
+            background: blue;
+            animation: borderMove 7s ease-in infinite;
+
+
+        }
+
+        @keyframes borderMove {
+            25% {
+                margin-left: 90vw;
+                margin-top: 0px;
+                transform: rotate(450deg);
+                background: red;
+
+            }
+
+            50% {
+                margin-top: 80vh;
+                margin-left: 85vw;
+                transform: rotate(900deg);
+                background: rgb(7, 202, 33);
+
+            }
+
+            75% {
+                margin-top: 70vh;
+                margin-left: 0vw;
+                transform: rotate(1350deg);
+                background: rgb(216, 147, 18);
+
+            }
+
+            100% {
+                margin-top: 0vh;
+                margin-left: 0vw;
+                transform: rotate(1800deg);
+                background: rgb(46, 44, 43);
+
+            }
+
+        }
+
+        .box3 {
+            width: 800px;
+            height: 500px;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            /* background: blue; */
+            z-index: -100;}
+        .earth{
+           text-align: center;
+           justify-content: center;
+           padding-top: 130px;
+           position: relative;
+           z-index: 1;
+           
+           
+          
+           
+        }
+        .earth img{
+            position:relative;
+           z-index: 1;
+           /* border: 5px solid black; */
+        }
+        .moon img{
+            position: absolute;
+            top:300px;
+            left:500px;
+            /* top:100px;
+            left:100px; */
+            animation: moon 5s linear infinite;
+            animation-delay: 0s;
+            z-index: 2;
+
+           
+        }
+        @keyframes moon {
+          50%{
+            top:100px;
+            left:120px;
+            
+            
+          }
+            
+          100%{
+            top:300px;
+            left:500px;
+            z-index: -1;
+            
+        }
+        
+      
+        }
+    </style>
+</head>
+
+<body>
+    <!-- make a clock with animations -->
+    <!-- make a earth and moon revolution animationr -->
+    <!-- make an animation box moving from left to right to bottom to top  -->
+
+
+
+    <div class="box2"></div>
+
+    <dv class="box3">
+        <div class="earth">
+            <img src="images/earth.png" alt="" width="300px" height="300px">
+        </div>
+        <div class="moon">
+            <img src="images/moon.png" alt="" width="150px" height="150px">
+        </div>
+    </dv>
+    <!-- <div class="box1"></div> -->
+</body>
+
+</html
