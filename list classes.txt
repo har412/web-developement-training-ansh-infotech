@@ -1,0 +1,6 @@
+pagination
+pager
+list-group
+breadcrums
+nav nav-tabs
+nav nav-pills
