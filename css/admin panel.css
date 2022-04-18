@@ -67,4 +67,7 @@ body{
     .c{
         text-align: center;
     }
+    .pd{
+       display:block;
+    }
   }
