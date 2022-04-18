@@ -63,3 +63,8 @@ body{
     list-style-type: disc;
     padding-left: 1rem !important;
 }
+@media screen and (max-width: 968px) {
+    .c{
+        text-align: center;
+    }
+  }
