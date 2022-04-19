@@ -17,7 +17,7 @@ body{
     background: blue;
    
     border-radius: 10px;
-}
+}   
 .view3{
     background: green;
    
@@ -65,7 +65,7 @@ body{
 }
 @media screen and (max-width: 968px) {
     .c{
-        text-align: center;
+        text-align: left;
     }
     .pd{
        display:block;
